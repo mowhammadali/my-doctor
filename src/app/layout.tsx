@@ -1,27 +1,27 @@
-import type { Metadata } from "next";
-import { Vazirmatn } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Vazirmatn } from 'next/font/google'
+import './globals.css'
 
-const vazirMant =  Vazirmatn({
-  subsets: ["latin" , "arabic"],
-  display: "swap",
+const vazirMant = Vazirmatn({
+	subsets: ['latin', 'arabic'],
+	display: 'swap'
 })
 
 export const metadata: Metadata = {
-  title: "دکتر من",
-  description: "پلتفرم جامع جستجوی دکتر و رزرو نوبت آنلاین",
-};
+	title: 'دکتر من',
+	description: 'پلتفرم جامع جستجوی دکتر و رزرو نوبت آنلاین'
+}
 
 export default function RootLayout({
-  children,
+	children
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode
 }>) {
-  return (
-    <html lang="en">
-      <body lang="fa" dir="rtl" className={vazirMant.className}>
-        {children}
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body lang="fa" dir="rtl" className={vazirMant.className}>
+				{children}
+			</body>
+		</html>
+	)
 }
