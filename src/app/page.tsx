@@ -1,3 +1,5 @@
-export default function Home() {
-	return <h1>دکتر من</h1>
+import { type ReactNode } from 'react';
+
+export default function Home(): ReactNode {
+	return <h1>دکتر من</h1>;
 }
