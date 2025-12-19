@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { type ReactNode } from 'react';
 
-import { vazirFont } from "@/fonts/fonts";
+import { vazirFont } from '@/fonts/fonts';
 import HeaderComponent from '@/components/header/header.component';
+import FooterComponent from '@/components/footer/footer.component';
 
 import './globals.css';
 
@@ -21,6 +22,7 @@ export default function RootLayout({
 			<body>
 				<HeaderComponent />
 				{children}
+				<FooterComponent />
 			</body>
 		</html>
 	);

@@ -5,17 +5,17 @@ export const vazirFont = localFont({
 		{
 			path: '../assets/fonts/Vazir-Regular.woff',
 			weight: '400',
-			style: 'normal',
+			style: 'normal'
 		},
 		{
 			path: '../assets/fonts/Vazir-Regular.ttf',
 			weight: '400',
-			style: 'normal',
+			style: 'normal'
 		},
 		{
 			path: '../assets/fonts/Vazir-Regular.eot',
 			weight: '400',
-			style: 'normal',
-		},
-	],
-})
+			style: 'normal'
+		}
+	]
+});
