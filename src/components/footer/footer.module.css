@@ -3,8 +3,6 @@
 	grid-auto-columns: 1fr 1fr;
 	column-gap: 1rem;
 
-	padding-inline: var(--full-width-padding-inline);
-
 	background-color: var(--color-gray-93);
 
 	.writings,
