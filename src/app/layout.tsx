@@ -21,7 +21,10 @@ export default function RootLayout({
 		<html lang="fa" dir="rtl" className={vazirFont.className}>
 			<body>
 				<HeaderComponent />
-				{children}
+				<main>{children}</main>
+				<p className="tagline">
+					نوبت دهی پزشکی ، سامانه نوبت دهی اینترنتی بیمارستان و پزشکان
+				</p>
 				<FooterComponent />
 			</body>
 		</html>

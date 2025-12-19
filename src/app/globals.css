@@ -104,4 +104,16 @@ body {
 
 	background-color: var(--color-surface-400);
 	color: var(--color-text-500);
+
+	> * {
+		padding-inline: var(--full-width-padding-inline);
+	}
+}
+
+.tagline {
+	background-color: var(--color-gray-90);
+
+	padding-block: 1rem;
+
+	text-align: center;
 }
