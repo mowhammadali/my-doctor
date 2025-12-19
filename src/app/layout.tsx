@@ -1,16 +1,11 @@
 import type { Metadata } from 'next';
 import { type ReactNode } from 'react';
-import { Vazirmatn } from 'next/font/google';
 
+import { vazirFont } from '@/fonts/fonts';
 import HeaderComponent from '@/components/header/header.component';
+import FooterComponent from '@/components/footer/footer.component';
 
 import './globals.css';
-
-const vazirMant = Vazirmatn({
-	subsets: ['latin', 'arabic'],
-	display: 'swap',
-	weight: '400'
-});
 
 export const metadata: Metadata = {
 	title: 'دکتر من',
@@ -23,10 +18,14 @@ export default function RootLayout({
 	children: ReactNode;
 }>): ReactNode {
 	return (
-		<html lang="fa" dir="rtl" className={vazirMant.className}>
+		<html lang="fa" dir="rtl" className={vazirFont.className}>
 			<body>
 				<HeaderComponent />
-				{children}
+				<main>{children}</main>
+				<p className="tagline">
+					نوبت دهی پزشکی ، سامانه نوبت دهی اینترنتی بیمارستان و پزشکان
+				</p>
+				<FooterComponent />
 			</body>
 		</html>
 	);

@@ -4,8 +4,6 @@
 	justify-content: space-between;
 	gap: 1rem;
 
-	inline-size: min(calc(100% - 2rem), 75rem);
-	margin-inline: auto;
 	padding-block: 1rem;
 
 	> ul {
