@@ -1,0 +1,46 @@
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+
+	inline-size: min(calc(100% - 2rem), 75rem);
+	margin-inline: auto;
+	padding-block: 1rem;
+
+	> ul {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+
+		> li {
+			a {
+				&.active {
+					color: var(--color-primary);
+				}
+			}
+		}
+	}
+
+	.btn {
+		border: 1px solid var(--color-primary);
+		border-radius: 8px;
+
+		padding-inline: 1rem;
+		padding-block: 0.2rem;
+
+		background-color: transparent;
+		color: var(--color-primary);
+
+		cursor: pointer;
+
+		transition:
+			background-color 0.2s ease-in-out,
+			color 0.2s ease-in-out;
+
+		&:hover {
+			background-color: var(--color-primary);
+			color: var(--color-gray-99);
+		}
+	}
+}
