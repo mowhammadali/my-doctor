@@ -1,11 +1,15 @@
 import type { Metadata } from 'next';
-import { Vazirmatn } from 'next/font/google';
-import './globals.css';
 import { type ReactNode } from 'react';
+import { Vazirmatn } from 'next/font/google';
+
+import HeaderComponent from '@/components/header/header.component';
+
+import './globals.css';
 
 const vazirMant = Vazirmatn({
 	subsets: ['latin', 'arabic'],
-	display: 'swap'
+	display: 'swap',
+	weight: '400'
 });
 
 export const metadata: Metadata = {
@@ -16,11 +20,14 @@ export const metadata: Metadata = {
 export default function RootLayout({
 	children
 }: Readonly<{
-	children: React.ReactNode;
+	children: ReactNode;
 }>): ReactNode {
 	return (
 		<html lang="fa" dir="rtl" className={vazirMant.className}>
-			<body>{children}</body>
+			<body>
+				<HeaderComponent />
+				{children}
+			</body>
 		</html>
 	);
 }
