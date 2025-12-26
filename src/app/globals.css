@@ -97,13 +97,13 @@ a {
 
 body {
 	display: grid;
-	grid-template-rows: auto 1fr auto;
+	grid-template-rows: auto 1fr auto auto;
 
 	min-block-size: 100vh;
 	min-block-size: 100dvh;
 
 	background-color: var(--color-surface-400);
-	color: var(--color-text-500);
+	color: var(--color-text-700);
 
 	> * {
 		padding-inline: var(--full-width-padding-inline);
