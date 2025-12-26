@@ -5,9 +5,9 @@
 
 	inline-size: min(100%, 50rem);
 
-	padding: 1rem;
+	padding: 0.5rem;
 
-	border: 2px solid var(--color-gray-20);
+	border: 2px solid var(--color-gray-40);
 	border-radius: 999rem;
 
 	.prefix {
@@ -18,6 +18,8 @@
 
 		> svg {
 			font-size: 1.5rem;
+
+			color: var(--color-text-700);
 		}
 	}
 
@@ -56,6 +58,8 @@
 			padding: 0.5rem;
 
 			cursor: pointer;
+
+			color: var(--color-text-700);
 
 			> svg {
 				font-size: 1.5rem;

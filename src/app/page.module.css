@@ -1,0 +1,37 @@
+.home {
+	block-size: 100%;
+	inline-size: 100%;
+
+	display: grid;
+	align-content: center;
+	justify-items: center;
+	gap: 1rem;
+	padding-block: 1rem;
+
+	h1 {
+		display: inline-flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.history {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 1rem;
+
+			> li {
+				padding: 0.4rem 0.8rem;
+				border-radius: 999px;
+				background-color: var(--color-gray-93);
+				box-shadow: var(--shadow-400);
+			}
+		}
+	}
+}
