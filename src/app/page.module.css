@@ -12,6 +12,8 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 1rem;
+
+		font-size: var(--fz-700);
 	}
 
 	.history {
