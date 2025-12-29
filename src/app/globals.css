@@ -102,6 +102,8 @@ body {
 	min-block-size: 100vh;
 	min-block-size: 100dvh;
 
+	font-size: var(--fz-400);
+
 	background-color: var(--color-surface-400);
 	color: var(--color-text-700);
 

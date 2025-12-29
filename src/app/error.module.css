@@ -1,0 +1,81 @@
+.error {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-block-size: 100%;
+
+	padding-block-end: 2rem;
+
+	.content {
+		display: grid;
+		grid-template-areas:
+			'writings visuals'
+			'retry visuals'
+			'error-logs error-logs';
+		column-gap: 2rem;
+		row-gap: 3rem;
+
+		inline-size: min(40rem, 100%);
+
+		.writings {
+			display: grid;
+			gap: 0.8rem;
+
+			grid-area: writings;
+
+			> p {
+				line-height: 2rem;
+			}
+
+			> p:nth-child(1) {
+				font-size: var(--fz-700);
+			}
+
+			> p:nth-child(2) {
+				font-size: var(--fz-600);
+			}
+
+			> p:nth-child(3) {
+				font-size: var(--fz-400);
+			}
+		}
+
+		.retry {
+			grid-area: retry;
+
+			button {
+				padding: 0.2rem 1rem;
+
+				outline: none;
+				border: none;
+				border-radius: 0.6rem;
+
+				color: var(--color-gray-99);
+				background-color: var(--color-primary);
+
+				cursor: pointer;
+			}
+		}
+
+		.error-logs {
+			grid-area: error-logs;
+			min-inline-size: 100%;
+			inline-size: 0;
+
+			pre {
+				max-block-size: 12rem;
+				overflow: auto;
+			}
+		}
+
+		.visuals {
+			grid-area: visuals;
+
+			img {
+				min-block-size: 100%;
+				block-size: 0;
+			}
+		}
+	}
+}
