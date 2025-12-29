@@ -1,0 +1,52 @@
+.not-found {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-block-size: 100%;
+
+	.content {
+		display: grid;
+		grid-template-areas:
+			'writings visuals'
+			'search visuals';
+		gap: 1rem;
+
+		inline-size: min(40rem, 100%);
+
+		.writings {
+			display: grid;
+			gap: 1rem;
+
+			grid-area: writings;
+
+			> p {
+				line-height: 2rem;
+			}
+
+			> p:nth-child(1) {
+				font-size: var(--fz-800);
+			}
+
+			> p:nth-child(2) {
+				font-size: var(--fz-700);
+			}
+
+			> p:nth-child(3) {
+				font-size: var(--fz-500);
+			}
+		}
+
+		.search {
+			grid-area: search;
+		}
+
+		.visuals {
+			grid-area: visuals;
+
+			img {
+				min-block-size: 100%;
+				block-size: 0;
+			}
+		}
+	}
+}
